@@ -1,0 +1,3 @@
+<app-login-form *ngIf="!authorizated"></app-login-form>
+<app-user-page *ngIf="authorizated"></app-user-page>
+<a *ngIf="authorizated" class="waves-effect waves-light btn-large logOutButton" (click)="logOut()">LogOut</a>
